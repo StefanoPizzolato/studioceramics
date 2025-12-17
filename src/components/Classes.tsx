@@ -1,23 +1,39 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Clock, Users, Star } from "lucide-react";
+import { Clock, DollarSign, Info } from "lucide-react";
 
 const classes = [
   {
-    title: "Wheel Throwing",
+    title: "Clay Play",
     description:
-      "Learn the art of centering clay on the wheel and creating beautiful vessels. Perfect for beginners wanting to master the basics.",
+      "Learn the art of wheel throwing in a fun, relaxed environment. Perfect for beginners wanting to experience the joy of working with clay.",
     duration: "2.5 hours",
-    size: "Max 6 students",
-    level: "Beginner - Intermediate",
+    price: "$180",
+    note: "Experience only - pieces not included",
   },
   {
-    title: "Hand Building",
+    title: "Clay Play Deluxe",
     description:
-      "Explore pinching, coiling, and slab techniques to create unique ceramic pieces without the wheel.",
+      "The full pottery experience! Learn wheel throwing and take home your creations - professionally glazed and fired.",
     duration: "2.5 hours",
-    size: "Max 8 students",
-    level: "All levels",
+    price: "$250",
+    note: "Includes glazing & firing",
+  },
+  {
+    title: "Sculpting Introduction",
+    description:
+      "Explore hand building and sculpting techniques to create unique ceramic art pieces without the wheel.",
+    duration: "2.5 hours",
+    price: "$200",
+    note: "All materials included",
+  },
+  {
+    title: "5 Week Pottery Course",
+    description:
+      "A comprehensive journey into ceramics. Develop your skills over five weeks with dedicated instruction and studio time.",
+    duration: "5 weeks",
+    price: "$560",
+    note: "Includes all materials & firings",
   },
 ];
 
@@ -66,13 +82,13 @@ const Classes = () => {
                     <Clock className="w-4 h-4 text-primary" />
                     {item.duration}
                   </div>
-                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                    <Users className="w-4 h-4 text-primary" />
-                    {item.size}
+                  <div className="flex items-center gap-2 text-sm font-semibold text-primary">
+                    <DollarSign className="w-4 h-4" />
+                    {item.price}
                   </div>
                   <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                    <Star className="w-4 h-4 text-primary" />
-                    {item.level}
+                    <Info className="w-4 h-4 text-primary" />
+                    {item.note}
                   </div>
                 </div>
 

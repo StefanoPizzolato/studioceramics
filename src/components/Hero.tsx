@@ -68,20 +68,6 @@ const Hero = () => {
           </a>
         </motion.div>
 
-        {/* Promo Badge */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6, delay: 1 }}
-          className="mt-12"
-        >
-          <div className="inline-flex items-center gap-3 px-5 py-3 bg-card border border-border rounded-2xl shadow-soft">
-            <span className="text-2xl font-serif font-semibold text-primary">$20 off</span>
-            <span className="text-sm text-muted-foreground">
-              Use code <span className="font-semibold text-foreground">LAUNCH20</span> at checkout
-            </span>
-          </div>
-        </motion.div>
       </div>
 
       {/* Scroll Indicator */}

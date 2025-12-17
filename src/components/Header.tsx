@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import logo from "@/assets/logo.jpg";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,9 +21,12 @@ const Header = () => {
             href="#"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
-            className="font-serif text-xl md:text-2xl font-semibold text-foreground"
+            className="flex items-center gap-3"
           >
-            Studio Ceramics
+            <img src={logo} alt="Studio Ceramics Ballarat" className="h-10 md:h-12 w-auto rounded-full" />
+            <span className="font-serif text-xl md:text-2xl font-semibold text-foreground">
+              Studio Ceramics
+            </span>
           </motion.a>
 
           {/* Desktop Navigation */}
