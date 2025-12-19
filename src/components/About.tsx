@@ -37,7 +37,7 @@ const About = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-sm font-medium text-primary tracking-wider uppercase mb-4 block">
+          <span className="text-sm font-medium text-secondary tracking-wider uppercase mb-4 block">
             Welcome to the Studio
           </span>
           <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-foreground mb-6">

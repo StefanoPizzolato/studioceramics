@@ -14,7 +14,7 @@
 
 @layer base {
   :root {
-    /* Soft lilac ceramics palette - #b6b4f7 harmony */
+    /* Soft lilac ceramics palette - #b7b4f8 harmony */
     --background: 240 4% 95%;
     --foreground: 240 5% 10%;
 
@@ -24,9 +24,9 @@
     --popover: 240 5% 90%;
     --popover-foreground: 240 5% 10%;
 
-    /* Lilac primary (based on #b6b4f7) */
-    --primary: 333 71% 50%;
-    --primary-foreground: 327 73% 97%;
+    /* Lilac primary (based on #b7b4f8) */
+    --primary: 243 100% 84%;
+    --primary-foreground: 0 0% 98%;
 
     /* Deeper violet secondary */
     --secondary: 240 5% 33%;
@@ -36,16 +36,16 @@
     --muted: 240 4% 83%;
     --muted-foreground: 240 5% 10%;
 
-    /* Warm yellow accent (from logo sponge) */
-    --accent: 355 100% 97%;
-    --accent-foreground: 349 89% 60%;
+    /* Lilac accent */
+    --accent: 243 83% 84%;
+    --accent-foreground: 243 83% 84%;
 
     --destructive: 0 72% 50%;
     --destructive-foreground: 0 85% 97%;
 
     --border: 240 4% 83%;
     --input: 240 4% 83%;
-    --ring: 333 71% 50%;
+    --ring: 243 83% 84%;
 
     --radius: 1.5rem;
 
@@ -55,7 +55,7 @@
     --lilac-dark: 242 60% 60%;
     --lavender: 242 50% 95%;
     --lavender-dark: 242 40% 88%;
-    --plum: 242 50% 35%;
+    --plum: 243 83% 84%;
     --wisteria: 242 60% 75%;
 
     /* Typography */
@@ -70,16 +70,16 @@
     /* Sidebar */
     --sidebar-background: 270 30% 96%;
     --sidebar-foreground: 240 5% 10%;
-    --sidebar-primary: 333 71% 50%;
-    --sidebar-primary-foreground: 327 73% 97%;
+    --sidebar-primary: 243 83% 84%;
+    --sidebar-primary-foreground: 243 83% 84%;
     --sidebar-accent: 240 5% 33%;
     --sidebar-accent-foreground: 0 0% 98%;
     --sidebar-border: 240 4% 83%;
-    --sidebar-ring: 333 71% 50%;
-    --chart-1: 328 85% 70%;
-    --chart-2: 351 94% 71%;
-    --chart-3: 327 87% 81%;
-    --chart-4: 352 95% 81%;
+    --sidebar-ring: 243 83% 84%;
+    --chart-1: 243 83% 84%;
+    --chart-2: 243 83% 84%;
+    --chart-3: 243 83% 84%;
+    --chart-4: 243 83% 84%;
     --chart-5: 240 3% 46%;
     --sidebar: 0 0% 98%;
     --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
@@ -96,7 +96,7 @@
   }
 
   .dark {
-    --background: 240 5% 10%;
+    --background: 240 39% 96%;
     --foreground: 0 0% 98%;
 
     --card: 240 3% 15%;
@@ -105,8 +105,8 @@
     --popover: 240 5% 26%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 328 85% 70%;
-    --primary-foreground: 336 83% 17%;
+    --primary: 243 83% 0%;
+    --primary-foreground: 243 83% 84%;
 
     --secondary: 240 3% 46%;
     --secondary-foreground: 0 0% 98%;
@@ -114,28 +114,28 @@
     --muted: 240 3% 46%;
     --muted-foreground: 0 0% 98%;
 
-    --accent: 343 87% 15%;
-    --accent-foreground: 351 94% 71%;
+    --accent: 243 83% 84%;
+    --accent-foreground: 243 83% 84%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 85% 97%;
 
     --border: 240 5% 33%;
     --input: 240 5% 33%;
-    --ring: 328 85% 70%;
+    --ring: 243 83% 84%;
 
     --sidebar-background: 270 20% 10%;
     --sidebar-foreground: 0 0% 98%;
-    --sidebar-primary: 328 85% 70%;
-    --sidebar-primary-foreground: 336 83% 17%;
-    --sidebar-accent: 351 94% 71%;
-    --sidebar-accent-foreground: 343 87% 15%;
+    --sidebar-primary: 243 83% 84%;
+    --sidebar-primary-foreground: 243 83% 84%;
+    --sidebar-accent: 243 83% 84%;
+    --sidebar-accent-foreground: 243 83% 84%;
     --sidebar-border: 240 5% 33%;
-    --sidebar-ring: 328 85% 70%;
-    --chart-1: 327 87% 81%;
-    --chart-2: 352 95% 81%;
-    --chart-3: 328 85% 70%;
-    --chart-4: 351 94% 71%;
+    --sidebar-ring: 243 83% 84%;
+    --chart-1: 243 83% 84%;
+    --chart-2: 243 83% 84%;
+    --chart-3: 243 83% 84%;
+    --chart-4: 243 83% 84%;
     --chart-5: 240 5% 33%;
     --sidebar: 240 3% 15%;
     --shadow-2xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);

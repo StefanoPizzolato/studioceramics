@@ -22,7 +22,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="mb-6"
         >
-          <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium tracking-wide">
+          <span className="inline-block px-4 py-2 bg-primary/10 text-secondary rounded-full text-sm font-medium tracking-wide">
             Black Hill, Ballarat
           </span>
         </motion.div>
@@ -35,7 +35,7 @@ const Hero = () => {
         >
           Pottery
           <br />
-          <span className="text-gradient">Classes</span>
+          Classes
         </motion.h1>
 
         <motion.p
@@ -44,8 +44,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto mb-10"
         >
-          Ballarat, the wait is over! Beginner to intermediate ceramic wheel
-          throwing and hand building classes have landed in Black Hill.
+          Ceramic wheel throwing and hand building classes in Ballarat.
         </motion.p>
 
         <motion.div
