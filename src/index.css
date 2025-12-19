@@ -15,37 +15,37 @@
 @layer base {
   :root {
     /* Soft lilac ceramics palette - #b6b4f7 harmony */
-    --background: 242 60% 97%;
-    --foreground: 242 30% 20%;
+    --background: 240 4% 95%;
+    --foreground: 240 5% 10%;
 
-    --card: 242 50% 99%;
-    --card-foreground: 242 30% 20%;
+    --card: 0 0% 98%;
+    --card-foreground: 240 5% 10%;
 
-    --popover: 242 50% 95%;
-    --popover-foreground: 242 30% 20%;
+    --popover: 240 5% 90%;
+    --popover-foreground: 240 5% 10%;
 
     /* Lilac primary (based on #b6b4f7) */
-    --primary: 242 81% 70%;
-    --primary-foreground: 242 30% 15%;
+    --primary: 333 71% 50%;
+    --primary-foreground: 327 73% 97%;
 
     /* Deeper violet secondary */
-    --secondary: 242 40% 50%;
-    --secondary-foreground: 242 80% 98%;
+    --secondary: 240 5% 33%;
+    --secondary-foreground: 0 0% 98%;
 
     /* Soft muted lilac */
-    --muted: 242 40% 88%;
-    --muted-foreground: 242 25% 35%;
+    --muted: 240 4% 83%;
+    --muted-foreground: 240 5% 10%;
 
     /* Warm yellow accent (from logo sponge) */
-    --accent: 45 90% 70%;
-    --accent-foreground: 242 30% 20%;
+    --accent: 355 100% 97%;
+    --accent-foreground: 349 89% 60%;
 
     --destructive: 0 72% 50%;
     --destructive-foreground: 0 85% 97%;
 
-    --border: 242 40% 88%;
-    --input: 242 40% 88%;
-    --ring: 242 81% 70%;
+    --border: 240 4% 83%;
+    --input: 240 4% 83%;
+    --ring: 333 71% 50%;
 
     --radius: 1.5rem;
 
