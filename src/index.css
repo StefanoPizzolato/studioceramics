@@ -14,49 +14,49 @@
 
 @layer base {
   :root {
-    /* Deep navy & cream ceramics palette - inspired by pottery */
-    --background: 220 20% 96%;
-    --foreground: 220 40% 15%;
+    /* Soft lilac ceramics palette - #b6b4f7 harmony */
+    --background: 242 60% 97%;
+    --foreground: 242 30% 20%;
 
-    --card: 220 15% 98%;
-    --card-foreground: 220 40% 15%;
+    --card: 242 50% 99%;
+    --card-foreground: 242 30% 20%;
 
-    --popover: 220 15% 94%;
-    --popover-foreground: 220 40% 15%;
+    --popover: 242 50% 95%;
+    --popover-foreground: 242 30% 20%;
 
-    /* Deep navy primary (matches pottery glaze) */
-    --primary: 220 60% 30%;
-    --primary-foreground: 220 20% 98%;
+    /* Lilac primary (based on #b6b4f7) */
+    --primary: 242 81% 70%;
+    --primary-foreground: 242 30% 15%;
 
-    /* Warm cream secondary */
-    --secondary: 35 25% 90%;
-    --secondary-foreground: 220 40% 20%;
+    /* Deeper violet secondary */
+    --secondary: 242 40% 50%;
+    --secondary-foreground: 242 80% 98%;
 
-    /* Soft muted tones */
-    --muted: 220 15% 85%;
-    --muted-foreground: 220 20% 40%;
+    /* Soft muted lilac */
+    --muted: 242 40% 88%;
+    --muted-foreground: 242 25% 35%;
 
-    /* Warm accent */
-    --accent: 35 30% 92%;
-    --accent-foreground: 220 60% 30%;
+    /* Warm yellow accent (from logo sponge) */
+    --accent: 45 90% 70%;
+    --accent-foreground: 242 30% 20%;
 
     --destructive: 0 72% 50%;
     --destructive-foreground: 0 85% 97%;
 
-    --border: 220 15% 85%;
-    --input: 220 15% 85%;
-    --ring: 220 60% 30%;
+    --border: 242 40% 88%;
+    --input: 242 40% 88%;
+    --ring: 242 81% 70%;
 
     --radius: 1.5rem;
 
-    /* Custom variables - navy & cream palette */
-    --lilac: 220 50% 40%;
-    --lilac-light: 220 35% 60%;
-    --lilac-dark: 220 55% 25%;
-    --lavender: 220 20% 94%;
-    --lavender-dark: 220 15% 88%;
-    --plum: 220 45% 20%;
-    --wisteria: 35 20% 75%;
+    /* Custom variables - lilac palette */
+    --lilac: 242 81% 84%;
+    --lilac-light: 242 70% 90%;
+    --lilac-dark: 242 60% 60%;
+    --lavender: 242 50% 95%;
+    --lavender-dark: 242 40% 88%;
+    --plum: 242 50% 35%;
+    --wisteria: 242 60% 75%;
 
     /* Typography */
     --font-serif: 'Merriweather', ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
