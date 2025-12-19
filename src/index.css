@@ -14,49 +14,49 @@
 
 @layer base {
   :root {
-    /* Lilac ceramics palette */
-    --background: 240 4% 95%;
-    --foreground: 240 5% 10%;
+    /* Deep navy & cream ceramics palette - inspired by pottery */
+    --background: 220 20% 96%;
+    --foreground: 220 40% 15%;
 
-    --card: 0 0% 98%;
-    --card-foreground: 240 5% 10%;
+    --card: 220 15% 98%;
+    --card-foreground: 220 40% 15%;
 
-    --popover: 240 5% 90%;
-    --popover-foreground: 240 5% 10%;
+    --popover: 220 15% 94%;
+    --popover-foreground: 220 40% 15%;
 
-    /* Lilac primary */
-    --primary: 333 71% 50%;
-    --primary-foreground: 327 73% 97%;
+    /* Deep navy primary (matches pottery glaze) */
+    --primary: 220 60% 30%;
+    --primary-foreground: 220 20% 98%;
 
-    /* Soft lavender secondary */
-    --secondary: 240 5% 33%;
-    --secondary-foreground: 0 0% 98%;
+    /* Warm cream secondary */
+    --secondary: 35 25% 90%;
+    --secondary-foreground: 220 40% 20%;
 
-    /* Muted lilac */
-    --muted: 240 4% 83%;
-    --muted-foreground: 240 5% 10%;
+    /* Soft muted tones */
+    --muted: 220 15% 85%;
+    --muted-foreground: 220 20% 40%;
 
-    /* Light accent */
-    --accent: 355 100% 97%;
-    --accent-foreground: 349 89% 60%;
+    /* Warm accent */
+    --accent: 35 30% 92%;
+    --accent-foreground: 220 60% 30%;
 
     --destructive: 0 72% 50%;
     --destructive-foreground: 0 85% 97%;
 
-    --border: 240 4% 83%;
-    --input: 240 4% 83%;
-    --ring: 333 71% 50%;
+    --border: 220 15% 85%;
+    --input: 220 15% 85%;
+    --ring: 220 60% 30%;
 
     --radius: 1.5rem;
 
-    /* Custom variables */
-    --lilac: 270 40% 55%;
-    --lilac-light: 270 35% 75%;
-    --lilac-dark: 270 35% 40%;
-    --lavender: 270 30% 92%;
-    --lavender-dark: 270 25% 85%;
-    --plum: 280 30% 35%;
-    --wisteria: 280 25% 70%;
+    /* Custom variables - navy & cream palette */
+    --lilac: 220 50% 40%;
+    --lilac-light: 220 35% 60%;
+    --lilac-dark: 220 55% 25%;
+    --lavender: 220 20% 94%;
+    --lavender-dark: 220 15% 88%;
+    --plum: 220 45% 20%;
+    --wisteria: 35 20% 75%;
 
     /* Typography */
     --font-serif: 'Merriweather', ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
