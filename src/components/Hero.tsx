@@ -10,9 +10,9 @@ const Hero = () => {
         <img
           src={heroImage}
           alt="Studio Ceramics Ballarat pottery studio"
-          className="w-full h-full object-cover grayscale"
+          className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/40 to-background" />
+        <div className="absolute inset-0" />
       </div>
 
       {/* Content */}
@@ -24,14 +24,14 @@ const Hero = () => {
             initial={{ opacity: 0, x: -80, rotate: -180 }}
             animate={{ opacity: 1, x: 0, rotate: 0 }}
             transition={{ duration: 0.9, delay: 0.4, ease: "easeOut" }}
-            className="mx-auto w-64 sm:w-80 md:w-[28rem] h-auto object-contain drop-shadow-[0_18px_40px_rgba(0,0,0,0.2)] invisible"
+            className="mx-auto w-64 sm:w-80 md:w-[25rem] h-auto object-contain drop-shadow-[0_18px_40px_rgba(0,0,0,0.2)] invisible"
           />}
 
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="w-screen bg-primary px-6 py-1 text-2xl md:text-1xl lg:text-1xl font-large text-white tracking-wider uppercase"
+            className="w-screen bg-primary/50 px-6 py-1 text-2xl md:text-1xl lg:text-1xl font-large text-white tracking-wider uppercase"
           >
             Beginner to Intermediate - Pottery classes - Ballarat
           </motion.p>
