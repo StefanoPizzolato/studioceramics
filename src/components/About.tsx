@@ -78,6 +78,7 @@ const About = () => {
                 alt="Maddison shaping clay in the Studio Ceramics Ballarat workshop"
                 className="h-full w-full object-cover"
                 loading="lazy"
+                decoding="async"
               />
             </div>
           </motion.div>

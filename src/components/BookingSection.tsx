@@ -40,6 +40,7 @@ const BookingSection = () => {
           title="ClassBento booking widget"
           src="https://classbento.com.au/8e2hbhkhbkau-widget?wtn=8e2hbhkhbkau&is_preview=1"
           style={{ width: "1px", minWidth: "100%", height: "700px" }}
+          loading="lazy"
         ></iframe>
       </motion.div>
 
@@ -95,6 +96,7 @@ const BookingSection = () => {
                   title="ClassBento contact form"
                   src="https://classbento.com.au/8e2hbhkhbkau-message-widget"
                   style={{ width: "1px", minWidth: "100%", height: "500px" }}
+                  loading="lazy"
                 />
               </div>
             </div>

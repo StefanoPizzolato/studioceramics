@@ -88,6 +88,7 @@ const Classes = () => {
                   alt="Hands shaping clay on a pottery wheel"
                   className="h-64 w-full object-cover"
                   loading="lazy"
+                  decoding="async"
                 />
                 </div>
                 <div>
@@ -121,6 +122,7 @@ const Classes = () => {
                     src={item.iframeSrc}
                     style={{ width: "1px", minWidth: "100%", height: "560px" }}
                     frameBorder="0"
+                    loading="lazy"
                   />
                 </div>
               </div>

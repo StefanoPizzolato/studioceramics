@@ -10,6 +10,9 @@ const Hero = () => {
         <img
           src={heroImage}
           alt="Studio Ceramics Ballarat pottery studio"
+          loading="eager"
+          decoding="async"
+          fetchPriority="high"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0" />
@@ -18,15 +21,21 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 container-narrow text-center pt-20">
         <div className="flex flex-col items-center justify-around min-h-[70vh] w-full">
-          {<motion.img
+          {/*
+          <motion.img
             src={logoImage}
             alt="Studio Ceramics Ballarat logo"
             initial={{ opacity: 0, x: -80, rotate: -180 }}
             animate={{ opacity: 1, x: 0, rotate: 0 }}
             transition={{ duration: 0.9, delay: 0.4, ease: "easeOut" }}
             className="mx-auto w-64 sm:w-80 md:w-[25rem] h-auto object-contain drop-shadow-[0_18px_40px_rgba(0,0,0,0.2)] invisible"
-          />}
+          />
+          */}
+          <div className="mx-auto w-64 h-64 sm:w-80 sm:h-80 md:w-[25rem] md:h-[25rem]" />
 
+          <h1 className="sr-only">
+            Studio Ceramics Ballarat pottery classes in Ballarat
+          </h1>
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}

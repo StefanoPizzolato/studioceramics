@@ -37,7 +37,7 @@ const Testimonial = () => {
               title="ClassBento reviews"
               src="https://classbento.com.au/8e2hbhkhbkau-review-widget?succinct=1"
               style={{ width: "1px", minWidth: "100%", height: "400px" }}
-              
+              loading="lazy"
             />
           </a>
         </motion.div>
