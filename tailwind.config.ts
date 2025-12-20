@@ -91,9 +91,10 @@ export default {
   				DEFAULT: 'hsl(var(--lavender))',
   				dark: 'hsl(var(--lavender-dark))'
   			},
-  			plum: 'hsl(var(--plum))',
-  			wisteria: 'hsl(var(--wisteria))',
-  			sidebar: {
+			plum: 'hsl(var(--plum))',
+			wisteria: 'hsl(var(--wisteria))',
+			'bento-purple': 'hsl(var(--bento-purple))',
+			sidebar: {
   				DEFAULT: 'hsl(var(--sidebar-background))',
   				foreground: 'hsl(var(--sidebar-foreground))',
   				primary: 'hsl(var(--sidebar-primary))',

@@ -19,7 +19,7 @@ const classes = [
     description:
       "The full pottery experience! Learn wheel throwing and take home your creations - professionally glazed and fired.",
     duration: "2.5 hours",
-    price: "$250",
+    price: "$210",
     note: "Includes glazing & firing",
     iframeSrc:
       "https://classbento.com.au/wnmuzqtqau-booking-widget?open_in_new=1",
@@ -29,7 +29,7 @@ const classes = [
     description:
       "Explore hand building and sculpting techniques to create unique ceramic art pieces without the wheel.",
     duration: "2.5 hours",
-    price: "$200",
+    price: "$230",
     note: "All materials included",
     iframeSrc:
       "https://classbento.com.au/cn324a2sau-booking-widget?open_in_new=1",

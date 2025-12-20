@@ -1,15 +1,17 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import potteryImage1 from "@/assets/pottery-image-1.jpg";
-import potteryImage2 from "@/assets/pottery-image-2.jpg";
-import potteryImage3 from "@/assets/pottery-image-3.jpg";
-import potteryImage4 from "@/assets/pottery-image-4.jpg";
+import studioImage1 from "@/assets/SBC-studio2.webp";
+import studioImage2 from "@/assets/SBC-studio4.webp";
+import studioImage3 from "@/assets/SBC-studio3.webp";
+import studioImage4 from "@/assets/SBC-studio1.webp";
+import studioImage5 from "@/assets/SBC-studio5.webp";
 
 const images = [
-  { src: potteryImage1, alt: "Ceramic pottery on wheel" },
-  { src: potteryImage2, alt: "Hand building ceramics" },
-  { src: potteryImage3, alt: "Finished ceramic pieces" },
-  { src: potteryImage4, alt: "Studio ceramics work" },
+  { src: studioImage1, alt: "Studio ceramics class in action" },
+  { src: studioImage2, alt: "Hands shaping clay in the studio" },
+  { src: studioImage3, alt: "Ceramic pieces created in class" },
+  { src: studioImage4, alt: "Pottery tools and materials at the studio" },
+  { src: studioImage5, alt: "Studio ceramics workspace" },
 ];
 
 const Gallery = () => {
@@ -17,7 +19,7 @@ const Gallery = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="gallery" className="py-24 md:py-32 bg-secondary/30 bg-grain">
+    <section id="gallery" className="py-24 md:py-32 bg-primary/20 bg-grain">
       <div className="container-narrow" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -25,7 +27,7 @@ const Gallery = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-sm font-medium text-primary tracking-wider uppercase mb-4 block">
+          <span className="text-sm font-medium text-secondary tracking-wider uppercase mb-4 block">
             Gallery
           </span>
           <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-foreground mb-6">

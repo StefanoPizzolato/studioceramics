@@ -26,7 +26,7 @@
     --popover-foreground: 240 5% 10%;
 
     /* Lilac primary (based on #b7b4f8) */
-    --primary: 243 100% 84%;
+    --primary: 243 60% 65%;
     --primary-foreground: 0 0% 98%;
 
     /* Deeper violet secondary */
@@ -40,6 +40,9 @@
     /* Warm yellow accent */
     --accent: 48 100% 50%;
     --accent-foreground: 0 100% 100%;
+
+    /* Class Bento purple*/
+    --bento-purple: 334 60% 40%;
 
     --destructive: 0 72% 50%;
     --destructive-foreground: 0 85% 97%;
