@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Users, Sparkles, Heart } from "lucide-react";
-import aboutPortrait from "../assets/SBC-maddison.jpg";
+import aboutPortrait from "../assets/SBC-maddison.webp";
 
 const features = [
   {

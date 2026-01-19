@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import heroImage from "@/assets/SBC-back3.jpg";
+import heroImage from "@/assets/SBC-back3.webp";
 import logoImage from "@/assets/SBC-logo-lilac-darker-transparent.webp";
 
 const Hero = () => {
@@ -34,7 +34,7 @@ const Hero = () => {
           <div className="mx-auto w-64 h-64 sm:w-80 sm:h-80 md:w-[25rem] md:h-[25rem]" />
 
           <h1 className="sr-only">
-            Studio Ceramics Ballarat pottery classes in Ballarat
+            Pottery and Ceramics Classes in Black Hill, Ballarat
           </h1>
           <motion.p
             initial={{ opacity: 0, y: 30 }}
@@ -42,7 +42,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="w-screen bg-primary/50 px-6 py-1 text-2xl md:text-1xl lg:text-1xl font-large text-white tracking-wider uppercase"
           >
-            Beginner to Intermediate - Pottery classes - Ballarat
+            Beginner to Intermediate - Pottery classes in Ballarat
           </motion.p>
 
           <motion.div

@@ -1,7 +1,10 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Clock, Info } from "lucide-react";
-import throwingImage from "../assets/SBC-throwing.jpg";
+import throwingImage from "../assets/SBC-throwing-small.webp";
+import studioImage1 from "../assets/SBC-studio1.webp";
+import studioImage2 from "../assets/SBC-class.webp";
+import studioImage3 from "../assets/SBC-deluxe.webp";
 
 const classes = [
   {
@@ -13,6 +16,7 @@ const classes = [
     note: "Experience only - pieces not included",
     iframeSrc:
       "https://classbento.com.au/hmruzuj5au-booking-widget?open_in_new=1",
+    image: throwingImage,
   },
   {
     title: "Clay Play Deluxe",
@@ -23,6 +27,7 @@ const classes = [
     note: "Includes glazing & firing",
     iframeSrc:
       "https://classbento.com.au/wnmuzqtqau-booking-widget?open_in_new=1",
+    image: studioImage3,
   },
   {
     title: "Guided sculpting",
@@ -33,6 +38,7 @@ const classes = [
     note: "All materials included",
     iframeSrc:
       "https://classbento.com.au/cn324a2sau-booking-widget?open_in_new=1",
+    image: studioImage1,
   },
   {
     title: "Five Week Pottery Class",
@@ -43,6 +49,7 @@ const classes = [
     note: "Includes all materials & firings",
     iframeSrc:
       "https://classbento.com.au/t9r2p68fau-booking-widget?open_in_new=1",
+    image: studioImage2,
   },
 ];
 
@@ -84,7 +91,7 @@ const Classes = () => {
               <div className="space-y-6">
                 <div className="overflow-hidden rounded-2xl border border-border">
                 <img
-                  src={throwingImage}
+                  src={item.image}
                   alt="Hands shaping clay on a pottery wheel"
                   className="h-64 w-full object-cover"
                   loading="lazy"
