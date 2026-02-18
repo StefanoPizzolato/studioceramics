@@ -3,6 +3,22 @@ import heroImage from "@/assets/SBC-back3.webp";
 import logoImage from "@/assets/SBC-logo-lilac-darker-transparent.webp";
 
 const Hero = () => {
+  const handleBookClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
+    const sendEvent = (
+      window as Window & {
+        gtagSendEvent?: (url: string) => boolean;
+      }
+    ).gtagSendEvent;
+
+    if (typeof sendEvent === "function") {
+      sendEvent("#book");
+      return;
+    }
+
+    window.location.hash = "book";
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-grain">
       {/* Background Image */}
@@ -53,6 +69,7 @@ const Hero = () => {
           >
             <a
               href="#book"
+              onClick={handleBookClick}
               className="inline-flex items-center justify-center px-8 py-4 bg-primary text-primary-foreground font-medium rounded-full hover:bg-primary/90 transition-all duration-300 shadow-warm hover:shadow-elevated hover:-translate-y-0.5"
             >
               Book a Class

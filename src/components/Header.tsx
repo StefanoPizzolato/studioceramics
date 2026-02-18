@@ -13,6 +13,35 @@ const Header = () => {
     { href: "#book", label: "Book a Class" },
   ];
 
+  const handleNavClick = (
+    event: React.MouseEvent<HTMLAnchorElement>,
+    href: string,
+    closeMenu = false,
+  ) => {
+    if (closeMenu) {
+      setIsMenuOpen(false);
+    }
+
+    if (href !== "#book") {
+      return;
+    }
+
+    event.preventDefault();
+
+    const sendEvent = (
+      window as Window & {
+        gtagSendEvent?: (url: string) => boolean;
+      }
+    ).gtagSendEvent;
+
+    if (typeof sendEvent === "function") {
+      sendEvent(href);
+      return;
+    }
+
+    window.location.hash = "book";
+  };
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
       <div className="container-narrow">
@@ -39,6 +68,7 @@ const Header = () => {
               <a
                 key={link.href}
                 href={link.href}
+                onClick={(event) => handleNavClick(event, link.href)}
                 className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-300"
               >
                 {link.label}
@@ -68,7 +98,7 @@ const Header = () => {
               <a
                 key={link.href}
                 href={link.href}
-                onClick={() => setIsMenuOpen(false)}
+                onClick={(event) => handleNavClick(event, link.href, true)}
                 className="block py-3 text-base font-medium text-muted-foreground hover:text-primary transition-colors"
               >
                 {link.label}

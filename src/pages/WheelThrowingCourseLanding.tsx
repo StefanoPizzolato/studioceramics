@@ -395,6 +395,23 @@ const WheelThrowingCourseLanding = () => {
     });
   };
 
+  const handleBookClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
+
+    const sendEvent = (
+      window as Window & {
+        gtagSendEvent?: (url: string) => boolean;
+      }
+    ).gtagSendEvent;
+
+    if (typeof sendEvent === "function") {
+      sendEvent("#checkout");
+      return;
+    }
+
+    window.location.hash = "checkout";
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <header className="sticky top-0 z-50 border-b border-border/60 bg-background/90 backdrop-blur-md">
@@ -411,6 +428,7 @@ const WheelThrowingCourseLanding = () => {
           </a>
           <a
             href="#checkout"
+            onClick={handleBookClick}
             className="inline-flex items-center justify-center rounded-full bg-primary px-5 py-2 text-sm font-semibold text-primary-foreground shadow-warm transition-all duration-300 hover:-translate-y-0.5 hover:bg-primary/90 hover:shadow-elevated"
           >
             Book now
@@ -458,6 +476,7 @@ const WheelThrowingCourseLanding = () => {
                 <div className="flex flex-wrap gap-3">
                   <a
                     href="#checkout"
+                    onClick={handleBookClick}
                     className="inline-flex items-center justify-center rounded-full bg-primary px-7 py-3 font-semibold text-primary-foreground shadow-warm transition-all duration-300 hover:-translate-y-0.5 hover:bg-primary/90 hover:shadow-elevated"
                   >
                     Secure your spot
