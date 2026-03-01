@@ -28,6 +28,19 @@ const Header = () => {
 
     event.preventDefault();
 
+    const fbq = (
+      window as Window & {
+        fbq?: (...args: unknown[]) => void;
+      }
+    ).fbq;
+
+    if (typeof fbq === "function") {
+      fbq("trackCustom", "BookButtonClick", {
+        button_location: closeMenu ? "header_mobile" : "header_desktop",
+        target: href,
+      });
+    }
+
     const sendEvent = (
       window as Window & {
         gtagSendEvent?: (url: string) => boolean;

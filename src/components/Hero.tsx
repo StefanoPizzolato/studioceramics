@@ -5,6 +5,20 @@ import logoImage from "@/assets/SBC-logo-lilac-darker-transparent.webp";
 const Hero = () => {
   const handleBookClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
     event.preventDefault();
+
+    const fbq = (
+      window as Window & {
+        fbq?: (...args: unknown[]) => void;
+      }
+    ).fbq;
+
+    if (typeof fbq === "function") {
+      fbq("trackCustom", "BookButtonClick", {
+        button_location: "hero",
+        target: "#book",
+      });
+    }
+
     const sendEvent = (
       window as Window & {
         gtagSendEvent?: (url: string) => boolean;

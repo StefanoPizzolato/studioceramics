@@ -395,8 +395,24 @@ const WheelThrowingCourseLanding = () => {
     });
   };
 
-  const handleBookClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
+  const handleBookClick = (
+    event: React.MouseEvent<HTMLAnchorElement>,
+    buttonLocation: string,
+  ) => {
     event.preventDefault();
+
+    const fbq = (
+      window as Window & {
+        fbq?: (...args: unknown[]) => void;
+      }
+    ).fbq;
+
+    if (typeof fbq === "function") {
+      fbq("trackCustom", "BookButtonClick", {
+        button_location: buttonLocation,
+        target: "#checkout",
+      });
+    }
 
     const sendEvent = (
       window as Window & {
@@ -428,7 +444,7 @@ const WheelThrowingCourseLanding = () => {
           </a>
           <a
             href="#checkout"
-            onClick={handleBookClick}
+            onClick={(event) => handleBookClick(event, "landing_header")}
             className="inline-flex items-center justify-center rounded-full bg-primary px-5 py-2 text-sm font-semibold text-primary-foreground shadow-warm transition-all duration-300 hover:-translate-y-0.5 hover:bg-primary/90 hover:shadow-elevated"
           >
             Book now
@@ -476,7 +492,7 @@ const WheelThrowingCourseLanding = () => {
                 <div className="flex flex-wrap gap-3">
                   <a
                     href="#checkout"
-                    onClick={handleBookClick}
+                    onClick={(event) => handleBookClick(event, "landing_hero")}
                     className="inline-flex items-center justify-center rounded-full bg-primary px-7 py-3 font-semibold text-primary-foreground shadow-warm transition-all duration-300 hover:-translate-y-0.5 hover:bg-primary/90 hover:shadow-elevated"
                   >
                     Secure your spot
