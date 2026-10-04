@@ -3,7 +3,7 @@ import { useRef } from "react";
 import { Clock, Info } from "lucide-react";
 import throwingImage from "../assets/SBC-throwing-small.webp";
 import studioImage1 from "../assets/SBC-studio1.webp";
-import sixWeekClassImage from "../assets/six-week-maddi-explain.webp";
+import sixWeekClassImage from "../assets/six-week-wheel-class-maddi.webp";
 import studioImage3 from "../assets/SBC-deluxe.webp";
 
 const classes = [
