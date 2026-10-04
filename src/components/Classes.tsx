@@ -49,7 +49,7 @@ const classes = [
     note: "Includes all materials & firings",
     iframeSrc:
       "https://classbento.com.au/t9r2p68fau-booking-widget?open_in_new=1",
-    image: sixWeekClassImage,
+    image: `${sixWeekClassImage}?v=20261005`,
     imageAlt: "Maddison explaining a pottery technique while holding clay",
   },
 ];
