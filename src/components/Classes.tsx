@@ -3,7 +3,7 @@ import { useRef } from "react";
 import { Clock, Info } from "lucide-react";
 import throwingImage from "../assets/SBC-throwing-small.webp";
 import studioImage1 from "../assets/SBC-studio1.webp";
-import studioImage2 from "../assets/SBC-class.webp";
+import sixWeekClassImage from "../assets/six-week-maddi-explain.webp";
 import studioImage3 from "../assets/SBC-deluxe.webp";
 
 const classes = [
@@ -41,15 +41,16 @@ const classes = [
     image: studioImage1,
   },
   {
-    title: "Five Week Pottery Class",
+    title: "Six Week Pottery Wheel Throwing Class",
     description:
-      "A comprehensive journey into ceramics. Develop your skills over five weeks with dedicated instruction and studio time.",
-    duration: "5 weeks",
-    price: "$560",
+      "Develop your wheel throwing skills over six weeks with dedicated instruction and studio time.",
+    duration: "6 weeks",
+    price: "$590–$690",
     note: "Includes all materials & firings",
     iframeSrc:
       "https://classbento.com.au/t9r2p68fau-booking-widget?open_in_new=1",
-    image: studioImage2,
+    image: sixWeekClassImage,
+    imageAlt: "Maddison explaining a pottery technique while holding clay",
   },
 ];
 
@@ -92,7 +93,7 @@ const Classes = () => {
                 <div className="overflow-hidden rounded-2xl border border-border">
                 <img
                   src={item.image}
-                  alt="Hands shaping clay on a pottery wheel"
+                  alt={"imageAlt" in item ? item.imageAlt : "Hands shaping clay on a pottery wheel"}
                   className="h-64 w-full object-cover"
                   loading="lazy"
                   decoding="async"
